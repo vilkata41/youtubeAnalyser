@@ -60,3 +60,7 @@ That would execute all react scripts described in package.json and start up the 
 ## Reccomendations
 
 For easement and time-efficient purposes, the deployed version on DEVWEB could be used, since it is made up of the same code that is within this submission. The only drawback would be the longer times for HTTP handshakes between the client and the server, as mentioned above.
+
+## Important
+
+Since the application contains sensitive information (like API keys and account connections to Google/YouTube), the .env file has been removed.
