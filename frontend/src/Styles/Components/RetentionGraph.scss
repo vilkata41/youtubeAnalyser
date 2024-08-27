@@ -1,0 +1,50 @@
+// This style sheet contains additional styling for the retention graph, as well as designs for the chart tooltip
+// and container.
+
+@import "../variables";
+
+.chartContainer{
+  display: flex;
+  align-items: center;
+  padding: 2vw;
+}
+
+.chartTooltip{
+  margin:0;
+  padding: 2vw;
+  display: grid;
+  grid-template-columns: 49% 49%;
+  grid-column-gap: 2%;
+
+  h3{
+    font-size: 1.6rem;
+    color: $standOutColor;
+  }
+  p{
+    font-size: 0.9rem;
+    margin: 0;
+  }
+}
+
+#retentionWarning{
+  margin: 4vw 2vw;
+  font-size: 1.6rem !important;
+  color: #ff6262;
+  font-style: italic;
+  text-align: center;
+}
+
+// This changes label color to white
+.MuiChartsAxis-label{
+  fill:#ffffff;
+}
+
+// Change legend text color
+.MuiChartsLegend-series text tspan {
+  fill:#ffffff;
+}
+
+// Change label font
+.MuiChartsAxis-tickContainer .MuiChartsAxis-tickLabel {
+  font-family: "Roboto", sans-serif;
+}

@@ -1,0 +1,47 @@
+// Style sheet implementing the design of the navbar component (excluding the profile settings component).
+
+@import "../variables";
+
+nav{
+    margin: 0;
+    padding: 0.3rem;
+    width: calc(100% - 0.6rem);
+    background-color: transparentize($secondaryColor, 0.25);
+    backdrop-filter: blur(3px);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position:fixed;
+    top:0;
+    z-index:94;
+    filter: drop-shadow(0px 2px 8px black);
+}
+
+nav ul{
+    margin: 0;
+    padding: 1rem;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav span{
+    margin: 1rem 2rem;
+    padding: 0.6rem 1rem;
+}
+
+nav ul li:hover{
+    cursor: pointer;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    color: white;
+}
+
+nav ul li:hover a{
+    color: $standOutColor;
+}

@@ -1,0 +1,40 @@
+// Style sheet for the session renewer component, alongside all its children components.
+
+@import "../variables";
+
+#sessionRenewerContainer{
+  display: none;
+  grid-template-columns: 50% 50%;
+  z-index: 106;
+  position: fixed;
+  top: 2vw;
+  left: 3vw;
+  background-color: $secondaryColor;
+  border: 2px solid $mainColor;
+  border-radius: 25px;
+  padding: 2vw 4vw;
+  box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.6);
+  user-select: none;
+
+  p{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 1.3rem;
+  }
+}
+
+.renewerButton{
+  margin: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: $standOutColor;
+  color: black;
+  font-weight: bold;
+  font-size: 1.3rem;
+  border-radius: 5px;
+
+  &:hover{
+    cursor: pointer;
+    background-color: $standOutHoverColor;
+  }
+}

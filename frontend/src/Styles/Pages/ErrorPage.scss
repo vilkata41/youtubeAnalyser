@@ -1,0 +1,23 @@
+// Style sheet for the Error component and its children.
+
+@import "../variables";
+@import "../Components/Loading";
+
+#errPage{
+  padding: 7rem 10rem;
+
+  h1{
+    color: $standOutColor;
+    font-size: 4rem;
+    margin: 2rem 0;
+  }
+  p{
+    font-size: 1.3rem;
+    margin: 1rem 0;
+  }
+  img{
+    width: 18%;
+    display: block;
+    margin: 2rem auto 0 auto;
+  }
+}

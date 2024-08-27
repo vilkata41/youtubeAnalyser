@@ -1,0 +1,63 @@
+// Style sheet of the profile settings component located within the navbar.
+
+@import "../variables";
+
+#imageButton{
+    z-index: 100;
+
+    img{
+        border-radius: 50%;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        width: 4rem;
+        height: 4rem;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+#optionsMenu{
+    margin: -0.3rem;
+    z-index: 96;
+    background-color: $secondaryColor;
+    padding: 0.5rem 0;
+    display: block;
+    box-shadow: -2px 3px 5px rgba(0, 0, 0, 0.4);
+
+}
+
+.signOut, #viewChannel{
+    margin: 2rem 0.5rem;
+    padding: 0.8rem 4rem;
+    background-color: $standOutColor;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: black;
+    border-radius: 15px;
+
+    &:hover{
+        cursor: pointer;
+        background-color: $standOutHoverColor;
+    }
+}
+
+.subCount{
+    margin: 1rem 0 0 0 ;
+    padding: 1rem;
+    text-align: center;
+    border-top: 3px solid $mainColor;
+    border-bottom: 3px solid $mainColor;
+    font-weight: bold;
+}
+
+.channelName{
+    padding-bottom: 0.5rem;
+    padding-right: 5rem;
+    text-align: right;
+    margin: 1.3rem auto 1.5rem auto;
+    font-size: 1.3rem;
+    font-weight: bold;
+}

@@ -1,0 +1,45 @@
+// Style sheet for the sign-in page.
+
+@import "../variables";
+
+.initSentence{
+    margin: 20vh auto 1rem auto;
+    text-align: center;
+    font-size: 4rem;
+}
+
+#dataWarning{
+    width: 80%;
+    margin: 0 calc(10% - 1rem);
+    padding: 1rem 1rem 0.5rem 1rem;
+    position: fixed;
+    bottom: 0;
+    background-color: $secondaryColor;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
+    h3{
+        color: #FF5858;
+        font-size: 1.3rem;
+        margin: 0.3rem;
+    }
+
+    p{
+        font-style: italic;
+        font-size: 0.85rem;
+        margin: 0.3rem;
+    }
+
+    #closeDataWarning{
+        position: absolute;
+        top: 2vh;
+        right: 2vw;
+        font-weight: bold;
+        font-style: oblique;
+        user-select: none;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

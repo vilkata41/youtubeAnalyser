@@ -1,0 +1,35 @@
+// Style sheet for the not found page and its components.
+
+@import "../variables";
+
+#errorPage{
+  padding: 2rem 5rem;
+
+  h1{
+    font-size: 4rem;
+    font-weight: bolder;
+    margin: 1rem 0;
+    color: $standOutColor;
+  }
+  h2{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin: 1rem 0;
+    color: $standOutColor;
+  }
+  hr{
+    border: 2px solid $standOutColor;
+    border-radius: 2px;
+  }
+  p{
+    margin: 2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  img{
+    display: block;
+    margin: auto;
+    width: 45%;
+  }
+}

@@ -1,0 +1,31 @@
+// Style sheet for the loading component, specifying the rotating animation of the cogwheel.
+
+.loadingComponent{
+  display: block;
+  margin: 6rem 10rem;
+
+  img{
+    display: block;
+    margin: 1rem auto;
+    width: 15%;
+    height: auto;
+    align-self: center;
+    user-select: none;
+  }
+
+  p{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+
+@keyframes rotateAnimation {
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.rotating{
+  animation: rotateAnimation 1.5s linear infinite;
+}

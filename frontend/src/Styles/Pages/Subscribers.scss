@@ -1,0 +1,74 @@
+// Style sheet for the most relevant subscribers page and its components.
+
+@import "../variables";
+
+#subscribers{
+  border: 2px solid $secondaryColor;
+  border-radius: 25px;
+  margin: 7rem auto 3rem auto;
+  padding: 2rem 4vw;
+  width: 60%;
+  display: block;
+
+  a{
+    color: white;
+    text-decoration: none;
+  }
+
+  h1{
+    font-size: 2.8rem;
+  }
+
+  p{
+  }
+}
+
+.noSubsWarning{
+  margin: 4vw 2vw;
+  font-size: 1.2rem !important;
+  color: #ff6262;
+  font-style: italic;
+  text-align: center;
+}
+
+.subscriber{
+  display: grid;
+  grid-template-columns: 10% 60% 30%;
+  background-color: $secondaryColor;
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  border-radius: 50vw;
+
+  &:hover{
+    background-color: $secondaryHoverColor;
+  }
+
+  img{
+    margin: auto 0;
+    width: 70%;
+    height: auto;
+    border-radius: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.49);
+    display: inline-flex;
+  }
+}
+
+.listedChannelName{
+  margin: auto 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.listedSubCount{
+  margin: auto 1rem;
+  text-align: right;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#subsSentence{
+  font-size: 1.2rem;
+  margin: 2rem;
+  font-weight: bold;
+  color: $standOutColor;
+}

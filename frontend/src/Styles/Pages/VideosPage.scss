@@ -1,0 +1,93 @@
+// Style sheet for the videos listing page and its components.
+
+@import "../variables";
+
+#videos{
+  border-radius: 25px;
+  margin: 7rem auto 3rem auto;
+  padding: 2rem;
+  width: 70%;
+  display: block;
+  border: 2px solid $secondaryColor;
+
+  h1{
+    font-size: 2.8rem;
+    margin-left: 2vw;
+  }
+}
+
+.vidPageNavigator{
+  display: grid;
+  grid-column-gap: 0;
+  grid-template-columns: 20% 60% 20%;
+  width: 25%;
+  margin: 1rem 1rem 1rem auto;
+}
+
+.pageChangeButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $standOutColor;
+  width: 100%;
+  font-size: 1.5rem;
+  color: white;
+
+  &:hover{
+    cursor: pointer;
+    background-color: $standOutHoverColor;
+  }
+
+  img{
+    width: 60%;
+    height: auto;
+  }
+}
+
+.paginationNum{
+  border-top: 3px solid $secondaryColor;
+  border-bottom: 3px solid $secondaryColor;
+  text-align: center;
+  margin: auto;
+  padding: 0.1rem 0;
+  width: 100%;
+  font-size: 1.3rem;
+}
+
+.singleVideo{
+  display: flex;
+  background-color: $secondaryColor;
+  width: calc(100% - 3rem);
+  padding: 1rem;
+  margin: 1rem 0.5rem;
+  border-radius: 25px;
+
+  &:hover{
+    background-color: $secondaryHoverColor;
+    cursor: pointer;
+  }
+
+  img{
+    margin: auto 1rem;
+    width: 18%;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+  }
+
+  p{
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: auto auto auto 1rem;
+  }
+
+  h4{
+    font-size: 1rem;
+    color: $standOutColor;
+    position:relative;
+    top: 0;
+    right: 0;
+    margin:0;
+    padding:0;
+  }
+}

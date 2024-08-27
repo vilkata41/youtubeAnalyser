@@ -1,0 +1,119 @@
+// Style sheet for the specific video analysis page and some of its components (excluding the retention graph and
+// statistics box components).
+
+@import "../variables";
+
+.videoAnalysisDiv{
+  margin: 8vw 4vw;
+  padding: 4vw;
+  display: grid;
+  grid-template-columns: 48.5% 48.5%;
+  grid-gap: 2rem 3%;
+  border-radius: 33px;
+  border: 2px solid $secondaryColor;
+
+  h1{
+    margin: 1rem 0 20% 0;
+    font-size: 2.5rem;
+  }
+
+  p{
+    font-size: 1.3rem;
+  }
+  img{
+    margin: auto;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+  }
+}
+
+.statsAndTips{
+  margin: 4vw 0 0 0;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  border-radius: 25px;
+  border-top: 2px solid $secondaryColor;
+  padding: 1rem 2vw 0 2vw;
+
+  h2{
+    font-size: 2rem;
+  }
+}
+
+.specificAdvice{
+  h3{
+    font-size: 1.8rem;
+    color: $standOutColor;
+  }
+  h4{
+    font-size: 1.3rem;
+  }
+  ul{
+    padding:0;
+  }
+  li{
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 1.3rem;
+    list-style-type: none;
+    background-color: $secondaryColor;
+    user-select: none;
+    border-radius: 15px;
+
+    &:hover{
+      cursor: default;
+      background-color: $secondaryHoverColor;
+    }
+  }
+}
+
+#analyserBox{
+  display: grid;
+  grid-template-columns: 15% 15% 70%;
+}
+
+.analysisButton{
+  width: calc(100% - 2vw);
+  padding: 0.5rem 1vw;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  text-align: center;
+  user-select: none;
+  font-weight: bold;
+  font-size: 1.2vw;
+
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+#retentionButton{
+  background-color: $standOutColor;
+  color: black;
+}
+
+#statsButton{
+  background-color: $secondaryColor;
+  color: white;
+}
+
+#analysisContainer{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  width: calc(100% - 6px);
+  padding: 0;
+  margin: 0;
+  border: 2px solid $secondaryColor;
+  border-radius: 0 25px 25px 25px;
+}
+
+#notPublicWarning{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  color: #ff6262;
+  font-style: italic;
+  margin: 0 auto 2vw auto;
+  font-size: 1.8rem;
+}

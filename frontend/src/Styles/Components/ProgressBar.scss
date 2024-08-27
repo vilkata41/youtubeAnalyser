@@ -1,0 +1,20 @@
+// Style sheet shaping up the general style of a progress bar - shapes, colours, and appearance. Note that
+// this excludes the currently specified progress - this is specified dynamically.
+
+@import "../variables";
+
+.progressBarContainer{
+  margin: 4rem auto 1.5rem auto;
+  padding: 0;
+  width: 80%;
+  height: 2rem;
+  background-color: #D9D9D9;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.currentProgress{
+  margin: 0;
+  height: 2rem;
+  background-color: $standOutColor;
+}

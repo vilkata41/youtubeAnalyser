@@ -1,0 +1,9 @@
+// General styling applying to all elements of the App component. In our case, that is every single element.
+
+@import "variables";
+
+body{
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background-color: $mainColor;
+}

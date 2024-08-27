@@ -1,0 +1,116 @@
+// Style sheet for the dashboard page and most of its components.
+
+@import "../variables";
+
+#dashboard{
+  padding: 3rem;
+  margin: 7rem 3rem 3rem 3rem;
+  display: grid;
+  grid-template-columns: 48.5% 48.5%;
+  grid-gap: 2rem 3%;
+  border-radius: 33px;
+  border-top: 2px solid $secondaryColor;
+
+  h1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 2.8rem;
+  }
+  h2{
+    margin-top: 0;
+    font-size: 1.8rem;
+  }
+
+  img{
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+  }
+}
+
+.nestedDiv{
+  border: 1px solid $secondaryColor;
+  border-radius: 25px;
+  padding: 2rem;
+}
+
+.videoTitle{
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: auto 1rem;
+}
+
+.metric{
+  text-align: right;
+  font-size: 1.1rem;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+.videoDiv{
+  margin: 1rem 2rem;
+  padding: 2rem 1rem;
+  border-radius: 25px;
+  display: flex;
+  background-color: $secondaryColor;
+
+  &:hover{
+    background-color: $secondaryHoverColor;
+    cursor: pointer;
+  }
+
+  img{
+    margin: auto 1rem;
+    width: 20%;
+  }
+}
+
+#latestVidTitle{
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#latestVid{
+  img{
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+}
+
+#top5{
+  display: block;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin: 1rem auto;
+  padding: 2rem 0 0 0;
+  width: calc(100% - 4rem);
+}
+
+#top5Title{
+  margin-left: 2rem;
+}
+
+#monetizationGoals{
+  p{
+    margin:0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  h3{
+    margin: 4rem 0;
+    text-align: center;
+    color: $standOutColor;
+    font-size: 2rem;
+  }
+}
+
+.noTop5Warning{
+  margin: 4vw 2vw;
+  font-size: 1.2rem !important;
+  color: #ff6262;
+  font-style: italic;
+  text-align: center;
+}
