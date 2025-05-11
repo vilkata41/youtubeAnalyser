@@ -36,6 +36,7 @@ All of the files presented have been deployed to the university's server. The ba
 
 To access the application, one should visit the following link:
 [THIS IS THE APPLICATION ON DEVWEB](https://devweb2023.cis.strath.ac.uk/~jwb20147/honsProject888)
+(Unfortunately, the link does not work anymore, since the application was hosted on the university's servers. Henceforth, the application has been removed since I have already graduated.)
 
 **To be noted: When first accessing the application from devweb, the user may experience a slow response from the server. This happens because of the limited allocated computing power for students on the university's Apache Tomcat server. The application would be much faster if executed locally OR if the server was external and computing power allocated was larger.**
 
